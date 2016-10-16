@@ -12,6 +12,7 @@ public class MainActivity extends CustomAppCompatActivity {
 
     Button btn1;
     Button btn2;
+    Button btn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,8 @@ public class MainActivity extends CustomAppCompatActivity {
         setTitle("                      Smart Check");
 
         btn1= (Button)findViewById(R.id.imagebtn2);
-        btn2= (Button)findViewById(R.id.imagebtn1);
+        btn2= (Button)findViewById(R.id.imagebtn3);
+        btn3=(Button)findViewById(R.id.imagebtn1);
 
 btn1.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -36,7 +38,13 @@ Intent intent1 = new Intent(MainActivity.this,Attandance.class);
             }
         });
 
-
+btn3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent3 = new Intent(MainActivity.this,CheckCheck.class);
+        startActivity(intent3);
+    }
+});
 
     }
 

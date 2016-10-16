@@ -71,7 +71,7 @@ public class MyApplication extends Application {
                     intent.putExtra("executeType", "beacon");
                     getApplicationContext().startActivity(intent);
                 } else {
-                    showNotification("LG Twins", "사용 가능한 쿠폰이 있습니다.");
+                    showNotification("출석", "출석 가능한 비콘이 있습니다.");
                 }
             }
 
@@ -102,7 +102,7 @@ public class MyApplication extends Application {
                 .setContentTitle(title)
                 .setContentText(message)
                 .setSmallIcon(android.R.drawable.ic_dialog_info)
-                .setTicker("[LG Twins] 사용 가능한 쿠폰이 있습니다.")
+                .setTicker("[출석 가능한 비콘이 있습니다.]")
                 .setAutoCancel(true)
                 .setContentIntent(pendingIntent)
                 .setPriority(Notification.PRIORITY_HIGH)

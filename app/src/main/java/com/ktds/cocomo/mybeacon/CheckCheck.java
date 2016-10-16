@@ -8,11 +8,11 @@ import android.support.v7.app.AppCompatActivity;
  * Created by yijaein on 2016-10-17.
  */
 
-public class CreateAtt extends AppCompatActivity {
+public class CheckCheck extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.createatt);
-        setTitle("                     스마트 출석부");
+        setContentView(R.layout.checkcheck);
+
     }
 }
